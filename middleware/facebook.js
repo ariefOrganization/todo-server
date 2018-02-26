@@ -10,6 +10,8 @@ function find(req,res,next) {
       next(response.error)
     }else{
       req.fb=response
+	console.log(req.fb)
+
       next()
     }
   });

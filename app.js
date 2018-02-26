@@ -7,7 +7,7 @@ var cors = require('cors')
 var fb = require('fb')
 var mongoose = require('mongoose')
 require('dotenv').config()
-mongoose.connection.openUri('mongodb://ariefmanda:admin@cluster0-shard-00-00-htda3.mongodb.net:27017,cluster0-shard-00-01-htda3.mongodb.net:27017,cluster0-shard-00-02-htda3.mongodb.net:27017/mongo-crud?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin');
+mongoose.connection.openUri('mongodb://127.0.0.1:27017/todofancy');
 mongoose.Promise = global.Promise;
 mongoose.connection.once('open', () => {
   console.log('mongoose connection success');
